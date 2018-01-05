@@ -1,0 +1,10 @@
+@import '~styles/base';
+
+main {
+  background: $clr-grey-100;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-flow: wrap;
+  align-content: flex-start;
+}

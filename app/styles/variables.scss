@@ -1,0 +1,47 @@
+@import './material-color';
+
+$clr-w: #fff;
+$clr-b: #000;
+
+$font-base: 'Roboto', Arial, sans-serif;
+
+// Keep this manualy in sync with "redux-responsive" breakpoints
+$mq-breakpoints: (
+    extraSmall:  480px,
+    small: 768px,
+    medium: 993px,
+    large: 1200px
+);
+$mq-responsive: true;
+// $mq-show-breakpoints: (extraSmall, small, medium, large);
+
+////////////////////////////////////////////////////////
+// Variables names are the same as in muiTheme config //
+////////////////////////////////////////////////////////
+$primary1Color: $clr-cyan-500;
+$primary2Color: $clr-cyan-700;
+$primary3Color: $clr-grey-400;
+$accent1Color: $clr-pink-a200;
+$accent2Color: $clr-grey-100;
+$accent3Color: $clr-grey-500;
+$textColor: $clr-grey-900;
+$secondaryTextColor: $clr-grey-600;
+$alternateTextColor: $clr-white;
+$canvasColor: $clr-white;
+$borderColor: $clr-grey-300;
+$disabledColor: $clr-grey-400;
+$pickerHeaderColor: $clr-cyan-500;
+$clockCircleColor: $clr-grey-200;
+$shadowColor: $clr-black;
+
+$sidebarWidth: 220px;
+$sidebarColor: $clr-blue-grey-900;
+$gutterSmall: 8px;
+$gutterMedium: 16px;
+$gutterBig: 24px;
+$toolbarHeight: 48px;
+$toolbarColor: $clr-grey-300;
+
+$fontSizeSmall: 12px;
+$fontSizeMedium: 16px;
+$fontSizeLarge: 24px;

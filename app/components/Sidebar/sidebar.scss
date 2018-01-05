@@ -1,0 +1,43 @@
+@import '~styles/base';
+
+sidebar {
+  background: #1f1f1f;
+  color: $clr-w;
+  font-size: $fontSizeMedium;
+  padding: 10px;
+}
+
+.label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.input {
+  border: 1px solid $clr-b;
+  padding: 7px 10px;
+  background: $clr-w;
+  color: $clr-b;
+  outline: none;
+}
+
+.input-error {
+  border-color: red;
+}
+
+.field-btn {
+  background: $clr-blue-700;
+  margin-bottom: 20px;
+  width: 100%;
+  outline: none;
+  color: $clr-w;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.error {
+  line-height: 16px;
+  height: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: red;
+}

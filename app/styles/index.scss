@@ -1,0 +1,68 @@
+@import 'normalize.css/normalize.css';
+@import '~styles/base';
+@import '~styles/common';
+@import '~styles/fonts';
+
+body {
+    overflow: hidden;
+}
+
+main {
+    font-family: $font-base;
+    line-height: 1.428571429;
+    font-size: 13px;
+    margin: 0;
+
+    @include apply-font('Roboto');
+
+    @include mq($until: medium) {
+        height: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    a {
+        // TODO: override website mobile tag styles
+        // font-family: $font-base;
+        // font-weight: initial;
+        color: $clr-w;
+        text-decoration: none;
+        outline: none;
+    }
+
+    ul {
+        @include margin(0 null);
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+
+        li {
+            @include margin(0 null);
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @include margin(0 null);
+    }
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+}
+
+
+:global .inactive {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: transparentize($clr-b, .5);
+        top: 0;
+        left: 0;
+    }
+}

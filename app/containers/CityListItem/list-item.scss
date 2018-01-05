@@ -1,0 +1,34 @@
+@import '~styles/base';
+
+.list-item {
+  animation: blink 1s 1;
+  background: $clr-grey-200;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.list-order {
+  list-style-type: circle;
+}
+
+h2 {
+  text-align: center;
+  margin: 12px 0 0;
+  text-transform: capitalize;
+}
+
+@keyframes blink {
+  0% {
+    background: $clr-grey-200;
+    color: $clr-b;
+  }
+  50% {
+    background: $clr-blue-700;
+    color: $clr-w;
+  }
+  100% {
+    background: $clr-grey-200;
+    color: $clr-b;
+  }
+}
